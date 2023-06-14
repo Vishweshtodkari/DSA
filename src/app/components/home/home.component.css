@@ -1,0 +1,195 @@
+.mint-bg {
+  background-color: #ADEFD1;
+}
+
+.centering {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-bg {
+  background-image: url(../../../assets/images/DataStructure.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 800px;
+  width: 100%;
+  height: 80vh;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.btn-style {
+  position: absolute;
+  border-radius: 20px;
+  background: rgba(0, 32, 63, 0.8);
+  border: 2px solid #fff;
+}
+.btn-style:hover{
+  transition: 0.6s ease-in-out all;
+  background: rgba(0, 32, 63, 1);
+  transform: scale(1.1);
+}
+.stack-btn,
+.array-btn,
+.linked-list,
+.queues-btn,
+.tree-btn,
+.graph-btn,
+.tables-btn,
+.sets-btn {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.stack-btn>.btn-position {
+  left: 3%;
+  top: 221px;
+}
+
+.array-btn>.btn-position {
+  left: 0%;
+  top: 328px;
+}
+
+.linked-list>.btn-position {
+  left: -10px;
+  top: 404px;
+}
+
+.queues-btn>.btn-position {
+  left: 28%;
+  top: 300px;
+}
+.tree-btn>.btn-position {
+  right: 0%;
+  top: 235px;
+}
+
+.graph-btn>.btn-position {
+  right: 0%;
+  top: 318px;
+}
+
+.tables-btn>.btn-position {
+  right: 36px;
+  top: 394px;
+}
+
+.sets-btn>.btn-position {
+  right: 34%;
+  top: 306px;
+}
+.small-show{
+  display: none;
+}
+
+@media (min-width: 992px) and (min-height: 600px){
+  .home-bg{
+    max-width: 800px;
+    height: 80vh;
+  }
+} 
+@media (max-width: 767.5px){
+  .small-none{
+    display: none;
+  }
+  .small-show{
+    display: block;
+  }
+}
+/* small device look  */
+.blue-heading{
+  background: rgba(0, 32, 63, 1);
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  font-size: 17px;
+}
+.accordion {
+  width: 100%;
+  max-width: 360px;
+  margin: 30px auto 20px;
+  background: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 42px;
+  color: rgba(0, 32, 63, 1);
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link { border-bottom: 0; }
+
+.accordion li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px;
+}
+
+.accordion li.open .link { color: rgba(0, 32, 63, 1); }
+
+.accordion li.open i { color: rgba(0, 32, 63, 1); }
+
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+
+
+.submenu {
+  display: none;
+  background: rgba(0, 32, 63, 1);
+  font-size: 14px;
+}
+
+.submenu li { border-bottom: 1px solid #4b4a5e; }
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+.submenu a:hover {
+  background: #b63b4d;
+  color: #FFF;
+}
